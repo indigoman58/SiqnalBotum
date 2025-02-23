@@ -2,12 +2,15 @@ import asyncio
 import random
 from datetime import datetime, timedelta
 from telegram import Bot
+import pytz
 
 # Telegram botunuzun tokeni və kanal ID'sini buraya yazın
 TOKEN = '7698216854:AAHFwSP0pvO-prMGVCnT1ECU3TBGIRED1Fs'
 CHANNEL_ID = '-1002384885836'  # Kanal ID'sini eksi işarəsi ilə başlatmayı unutmayın
 
 bot = Bot(token=TOKEN)
+
+azerbaijan_tz = pytz.timezone('Asia/Baku')
 
 # Gözəl adlar və soyadlar
 male_first_names = [
